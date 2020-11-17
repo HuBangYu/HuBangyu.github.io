@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="基于Github和Hexo建立个人博客网站（Ubuntu环境下）"/>
+        <meta property="og:title" content="初识TensorFlow"/>
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>基于Github和Hexo建立个人博客网站（Ubuntu环境下） - UhaoL</title>
+    <title>初识TensorFlow - UhaoL</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -177,13 +177,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>基于Github和Hexo建立个人博客网站（Ubuntu环境下）</h1>
+                    <h1>初识TensorFlow</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2020-11-15
+                            2020-11-17
                         
                     </span>
                 </div>
@@ -199,61 +199,24 @@
 
             <!-- Tags and categories -->
            
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/Web/">#Web</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                        
-
-<a href="/categories/Hexo/">Hexo</a>
-
-                    
-                </div>
-            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>最终结果：可以通过XXX.github.io直接访问个人博客网站 </p>
-<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><p><a target="_blank" rel="noopener" href="https://krokette29.github.io/2019/05/25/%E5%9F%BA%E4%BA%8EGithub%E7%9A%84Hexo%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/">老黄的博客</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">知乎文章：GitHub+Hexo 搭建个人网站详细教程</a></p>
-<h2 id="Ubuntu-环境安装Node-js-Hexo"><a href="#Ubuntu-环境安装Node-js-Hexo" class="headerlink" title="Ubuntu 环境安装Node.js + Hexo"></a>Ubuntu 环境安装Node.js + Hexo</h2><p>设置Git </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git config –global user.name &quot;你的GitHub用户名&quot; </span><br><span class="line"> </span><br><span class="line">$ git config --global user.email &quot;你的GitHub注册邮箱&quot; </span><br><span class="line"></span><br><span class="line">$ ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot; </span><br><span class="line"></span><br><span class="line">$ cd ~&#x2F;.ssh </span><br><span class="line"></span><br><span class="line">$ gedit id_rsa.pub </span><br></pre></td></tr></table></figure>
-<p>复制文件的内容到Github(具体参考知乎文章) </p>
-<h2 id="安装-Nodejs"><a href="#安装-Nodejs" class="headerlink" title="安装 Nodejs"></a>安装 Nodejs</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ curl -sL https:&#x2F;&#x2F;deb.nodesource.com&#x2F;setup_15.x | sudo -E bash - </span><br><span class="line"> </span><br><span class="line">$ sudo apt-get install -y nodejs </span><br></pre></td></tr></table></figure>
+                <p>TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a target="_blank" rel="noopener" href="https://www.tensorflow.org/tutorials">TensorFlow官方教程</a><br><a target="_blank" rel="noopener" href="https://www.liquidweb.com/kb/how-to-install-tensorflow-on-ubuntu-18-04/">How to install TensorFlow in Ubuntu 18.04</a> 首先根据链接的内容，完成安装</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>完成安装后可以根据教程进入虚拟环境，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;Documents&#x2F;0002</span><br><span class="line">$ source .&#x2F;venv&#x2F;bin&#x2F;activate</span><br><span class="line">$ python </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>注： 若不使用sudo， 命令可能无法执行 </p>
-<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><figure class="highlight plain"><figcaption><span>cd ~/Documents/Blog</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ Hexo init blog </span><br></pre></td></tr></table></figure>
-<p>最终会要Blog文件夹中另外生成一个blog文件夹 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;Documents&#x2F;Blog&#x2F;blog </span><br><span class="line"></span><br><span class="line">$ hexo new test_my_site </span><br><span class="line"></span><br><span class="line">$ hexo g </span><br><span class="line"></span><br><span class="line">$ hexo s </span><br><span class="line"></span><br><span class="line">$ sudo npm install hexo-deployer-git –save </span><br></pre></td></tr></table></figure>
+<p>然后通过<a target="_blank" rel="noopener" href="https://www.tensorflow.org/tutorials/quickstart/beginner">这里</a>代码验证Tensorflow是否安装完成。</p>
+<h2 id="WAS-IST-MNIST"><a href="#WAS-IST-MNIST" class="headerlink" title="WAS IST MNIST ?"></a>WAS IST MNIST ?</h2><p>在TensorFlow中我们可以通过一句代码直接引用各种公开数据集，比如：<a target="_blank" rel="noopener" href="http://yann.lecun.com/exdb/mnist/">MNIST数据集</a>，这给测试模型提供极大的便利。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mnist &#x3D; tf.keras.datasets.mnist ## Code from the test example</span><br></pre></td></tr></table></figure>
 
-
-<p>需要要仓库的设置中 Github Pages选择Theme， 才会完成最终网页的生成。但在还没有通过Hexo将网页部署更新到网页的情况下，XXX.github.io显示的是Github的project pages. </p>
-<h2 id="HEXO部署到GitHub："><a href="#HEXO部署到GitHub：" class="headerlink" title="HEXO部署到GitHub："></a>HEXO部署到GitHub：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">$ hexo g </span><br><span class="line"></span><br><span class="line">$ hexo d </span><br></pre></td></tr></table></figure>
-
-
-<p>遇到的问题： </p>
-<p>目前的问题，本地文件可以预览，但是这些部署如何进入到Github，然后通过XXX.github.io进行访问？ </p>
-<p>目前该链接的访问结果是404. </p>
-<p>解决办法： </p>
-<p>重新初始化了blog文件，重新deploy， 需要要等20分钟来等待网站的更新。重新deploy之后，便可以成功通过XXX.github.io访问个人博客了 </p>
-<p>在进行网站个性化设计之前，我打算先更新一篇自己的博客，以此来记录自己的工作过程 </p>
-<h2 id="发布博客："><a href="#发布博客：" class="headerlink" title="发布博客："></a>发布博客：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n &quot;基于Github和Hexo建立个人博客网站（Ubuntu环境下）&quot;</span><br></pre></td></tr></table></figure>
-
-<p>将写好的文章放入到对应的md文件中，修改格式，保存后，可以通过</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>可以先通过以上指令生成本地预览，确定无误后，在通过三件套部署到GitHub。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png" alt="avatar"></p>
+<p>Die MNIST-Datenbank (Modified National Institute of Standards and Technology database) ist eine öffentlich verfügbare Datenbank von handgeschriebenen Ziffern. Die MNIST-Datenbank besteht aus 60.000 Beispielen im Trainingsdatensatz und 10.000 Beispielen im Testdatensatz. Der Datensatz dient dem Trainieren von Klassifikatoren, unter anderem Convolutional Neural Networks, im weiteren Sinne dem Maschinellen Lernen bzw. der Künstlichen Intelligenz. <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/MNIST-Datenbank">Wikipedia</a></p>
+<p>Es gibt noch ganz viele öffentliche Datenbanks in TensorFlow. Hier ist über <a target="_blank" rel="noopener" href="https://www.tensorflow.org/datasets/overview?hl=zh-cn">“TensorFlow Datasets” </a></p>
 
 
                 
