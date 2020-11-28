@@ -109,14 +109,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Nichts/</loc>
+    <loc>http://example.com/tags/%E8%8F%9C%E8%AD%9C/</loc>
     <lastmod>2020-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E8%8F%9C%E8%AD%9C/</loc>
+    <loc>http://example.com/tags/Nichts/</loc>
     <lastmod>2020-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -130,6 +130,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://example.com/categories/French/</loc>
+    <lastmod>2020-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>http://example.com/categories/Hexo/</loc>
